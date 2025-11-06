@@ -5,9 +5,9 @@
   "scripts": {
     "ng": "nx",
     "nx": "nx",
-    "start": "run-p -l start:frontend start:backend",
-    "start:frontend": "nx run frontend:serve",
-    "start:backend": "nx run backend:serve",
+    "start": "node api.js && run-p -l start:frontend start:backend",
+    "start:frontend": "node api.js && nx run frontend:serve",
+    "start:backend": "node api.js && nx run backend:serve",
     "build": "nx build",
     "submit": "ts-node submit.ts",
     "test": "nx run-many --all --target=test",
