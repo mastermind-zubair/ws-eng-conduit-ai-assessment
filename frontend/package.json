@@ -31,8 +31,8 @@
     "vite": "^5.1.4"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
+    "start": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview"
   },
   "browserslist": {
